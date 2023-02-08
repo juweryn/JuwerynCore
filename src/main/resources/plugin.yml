@@ -1,0 +1,16 @@
+name: JuwerynCore
+version: '${project.version}'
+main: me.juweryn.juweryncore.JuwerynCore
+api-version: 1.19
+authors: [ Juweryn ]
+description: Core Plugin for Spigot/Paper Servers
+
+commands:
+  coin:
+    description: Currency command
+    usage: /coin
+    aliases: [bal, c ]
+  coins:
+    description: Currency command
+    usage: /coins
+    aliases: [balof]

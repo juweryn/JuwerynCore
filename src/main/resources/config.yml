@@ -1,0 +1,4 @@
+prefix: "&7[&6&lJuweryn&7] &r"
+messages:
+  no-console: "This command can only be executed by a player."
+  no-permission: "You do not have permission to execute this command."
