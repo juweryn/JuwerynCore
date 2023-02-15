@@ -46,11 +46,11 @@ public class CoinCommand implements CommandExecutor {
                 }
             }
             if (usage.toString().endsWith("<")) {
-                sender.sendMessage(Utils.cc(prefix + "Balance: " + JuwerynCore.getPlugin().getCurrencyManager().getCoins(sender.getUniqueId())));
+                sender.sendMessage(Utils.cc(prefix + "Balance: &a" + JuwerynCore.getPlugin().getCurrencyManager().getCoins(sender.getUniqueId())));
                 return true;
             }
             usage.append("> <player>");
-            sender.sendMessage(Utils.cc(prefix + "Balance: " + JuwerynCore.getPlugin().getCurrencyManager().getCoins(sender.getUniqueId())));
+            sender.sendMessage(Utils.cc(prefix + "Balance: &a" + JuwerynCore.getPlugin().getCurrencyManager().getCoins(sender.getUniqueId())));
             sender.sendMessage(Utils.cc(usage.toString()));
 
 
@@ -63,7 +63,7 @@ public class CoinCommand implements CommandExecutor {
                         return true;
                     }
 
-                    sender.sendMessage(Utils.cc(prefix + "Usage: /coin add <player> <amount>"));
+                    sender.sendMessage(Utils.cc(prefix + "&7Usage: /coin add <player> <amount>"));
                     return true;
                 }
                 if (args[0].equalsIgnoreCase("remove")) {

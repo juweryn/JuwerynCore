@@ -37,7 +37,7 @@ public class CoinsCommand implements CommandExecutor {
 
         if (command.getName().equalsIgnoreCase("coins")) {
             if(args.length == 0) {
-                sender.sendMessage(Utils.cc(prefix + "Balance: " + JuwerynCore.getPlugin().getCurrencyManager().getCoins(sender.getUniqueId())));
+                sender.sendMessage(Utils.cc(prefix + "Balance: &a" + JuwerynCore.getPlugin().getCurrencyManager().getCoins(sender.getUniqueId())));
 
                 utils.coinGui(sender);
 
